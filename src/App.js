@@ -1,23 +1,23 @@
-import logo from './logo.svg';
+import React from 'react';
+import MyCarousel from './portfolio-components/carousel';
+import Tagline from './portfolio-components/tagline';
+import Aboutme from './portfolio-components/aboutme';
+import Portfolio from './portfolio-components/portfolio';
+import Contactme from './portfolio-components/contactme';
+import Footer from './portfolio-components/footer';
+import {Navigation} from './portfolio-components/navigation';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div >
+      {/* <Navigation /> */}
+      <MyCarousel />
+      <Tagline />
+      <Aboutme />
+      <Portfolio />
+      <Contactme />
+      <Footer />
     </div>
   );
 }
