@@ -1,8 +1,8 @@
 {
   "name": "sanphotofactory",
   "version": "0.1.0",
-  "homepage": "https://github.com/roshan-77/sanphotofactory",
-  "private": false,
+  "homepage": "sanphotofactory",
+  "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.2.0",
     "@fortawesome/free-brands-svg-icons": "^6.2.0",
