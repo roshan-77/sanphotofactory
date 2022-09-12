@@ -15,7 +15,7 @@ function MyCarousel() {
               className="d-block w-100"
               src={san1}
               alt="First slide"
-              style={{height : "100vh", objectFit: "cover"}}
+              style={{height : "60vh", objectFit: "cover"}}
             />
           </Carousel.Item>
           <Carousel.Item>
@@ -23,7 +23,7 @@ function MyCarousel() {
               className="d-block w-100"
               src={san2}
               alt="Second slide"
-              style={{height : "100vh", objectFit: "cover"}}
+              style={{height : "60vh", objectFit: "cover"}}
 
             />
           </Carousel.Item>
@@ -32,7 +32,7 @@ function MyCarousel() {
               className="d-block w-100"
               src={san3}
               alt="Third slide"
-              style={{height : "100vh", objectFit: "cover"}}
+              style={{height : "60vh", objectFit: "cover"}}
 
             />
           </Carousel.Item>
@@ -41,7 +41,7 @@ function MyCarousel() {
               className="d-block w-100"
               src={san4}
               alt="Third slide"
-              style={{height : "100vh", objectFit: "cover"}}
+              style={{height : "60vh", objectFit: "cover"}} 
 
             />
           </Carousel.Item>

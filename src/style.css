@@ -40,8 +40,15 @@
 }
 
 .image-container{
-    display:flex;
-    overflow-x:auto;
+    text-align: center;
+
+}
+
+@media screen and (max-width:600px) {
+    .image-container{
+        display:flex;
+        overflow-x:auto;
+    }
 }
 
 .image-container::-webkit-scrollbar{
