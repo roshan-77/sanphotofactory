@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/sanphotofactory/static/css/main.c15acbc0.css",
-    "main.js": "/sanphotofactory/static/js/main.da514f5b.js",
+    "main.css": "/sanphotofactory/static/css/main.5495dc5b.css",
+    "main.js": "/sanphotofactory/static/js/main.48381619.js",
     "static/media/port2.jpg": "/sanphotofactory/static/media/port2.67ee0c4876dc821ac41b.jpg",
     "static/media/port4.jpg": "/sanphotofactory/static/media/port4.fea6b14688c3b36202d5.jpg",
     "static/media/port3.jpg": "/sanphotofactory/static/media/port3.05dd56796ee00e857de2.jpg",
@@ -28,11 +28,11 @@
     "static/media/bday1.jpg": "/sanphotofactory/static/media/bday1.f85c1dd6917fc95e615c.jpg",
     "static/media/san1.jpg": "/sanphotofactory/static/media/san1.b3aa2368d31fa5a1cdfc.jpg",
     "index.html": "/sanphotofactory/index.html",
-    "main.c15acbc0.css.map": "/sanphotofactory/static/css/main.c15acbc0.css.map",
-    "main.da514f5b.js.map": "/sanphotofactory/static/js/main.da514f5b.js.map"
+    "main.5495dc5b.css.map": "/sanphotofactory/static/css/main.5495dc5b.css.map",
+    "main.48381619.js.map": "/sanphotofactory/static/js/main.48381619.js.map"
   },
   "entrypoints": [
-    "static/css/main.c15acbc0.css",
-    "static/js/main.da514f5b.js"
+    "static/css/main.5495dc5b.css",
+    "static/js/main.48381619.js"
   ]
 }
