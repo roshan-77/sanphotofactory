@@ -16,7 +16,7 @@ const Tagline = () => {
                 </div>
                 <div className="tagline-container-2">
                     <img alt="" src={tyan2} />
-                    <img alt="" src={tyan3} />
+                    <img alt="" src={tyan3} /><br/>
                     <Button>SEE OFFERS</Button>
                 </div>
             </div>

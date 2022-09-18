@@ -31,7 +31,7 @@ const Portfolio = () => {
     return(
         <div className="portfolio">
             <div className="container">
-                <div>
+                <div className="portfolio-images">
                     <h1>Portfolio</h1>
                     <div className="portfolio-items">
                         <ol>
@@ -52,11 +52,12 @@ const Portfolio = () => {
                         {active === "wedding" && <div className={active}> <div className="image-container" >{wedding.map(x=> imageContainer(x))}</div></div>}
 
                     </div>
-
+                </div>
+                <div className="portfolio-videos">
                     <h1>Videos</h1>
                     <div className="image-container">
                         {videos.map((x)=>
-                    <iframe style={{width:"420px", height:"320px", padding: "10px"}} src={`https://www.youtube.com/embed/${x}`} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                    <iframe style={{width:"420px", height:"320px", padding:"10px"}} src={`https://www.youtube.com/embed/${x}`} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                     )}
                     </div>
                 </div>

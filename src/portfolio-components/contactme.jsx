@@ -4,9 +4,9 @@ import "../style.css"
 
 const Contactme = () => {
     return(
-        <div className="contactme">
+        <div className="contact-me">
             <div className="container">
-                <div>
+                <div className="contact-me-description">
                     <h3>It's more important to click with my clients than to only click with my camera...</h3>
                     <p>
                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident voluptatum, aspernatur 

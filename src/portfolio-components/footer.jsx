@@ -29,8 +29,8 @@ const Footer = () => {
                     <div>PRICES</div>
                 </div>
             </div>
-            <div className="container">
-                <div>&copy; COPYRIGHT 2022 SANPHOTOFACTORY</div>
+            <div className="copyright">
+                <div className="">&copy; COPYRIGHT 2022 SANPHOTOFACTORY</div>
             </div>
         </div>
     )

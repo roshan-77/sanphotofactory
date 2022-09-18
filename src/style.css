@@ -5,16 +5,149 @@
     padding: 40px 0;
 }
 
+
 .tagline-containers{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    margin: 0 auto;
+    width: 700px;
+    justify-content: center;
 }
 
 .tagline-containers img{
-    width: 400px;
+    width: 350px;
     height: auto;
 }
+
+.tagline-container-1 p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+    margin-top: 20px;
+    text-align: center; 
+    
+}
+
+.tagline-container-1{
+    margin-top: 20%;
+    text-align:  right;
+    
+}
+
+.tagline-container-1 img{
+    margin-top: 25%;
+    text-align: right;
+}
+.tagline-container-2 {
+    margin-left: 10px;
+    text-align:  center;
+
+}
+
+.tagline-container-2 img {
+    padding-bottom: 10px;
+    text-align: left;
+}
+
+
+@media screen and (max-width:500px) {
+    .tagline-containers img{
+        max-width: 100%;
+        height: auto;
+    }
+
+    .tagline-containers{
+        max-width: 100%;
+    }
+
+    .tagline-container-1 p{
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 18px;
+        margin-top: 20px;
+        text-align: center; 
+        
+    }
+
+    .tagline-container-1{
+        margin-top: 10%;
+        text-align:  right;
+        
+    }
+    
+}
+
+/* ----------- About Me --------------- */
+.about-me-container{
+    display: flex;
+}
+
+.about-me h1{
+    font-size: 50px;
+    margin-bottom: 50px;
+}
+
+.about-me-container p{
+    font-size: 35px;
+    margin-bottom: 50px;
+}
+.about-me-container img{
+    position: relative;
+    width: auto;
+    height: 550px;
+    padding:0 90px;
+    top: -100px;
+}
+
+.about-me-container Button{
+    font-size: 20px;
+}
+
+
+@media screen and ( max-width: 500px){
+    .about-me-container{
+        display: flex;
+        flex-wrap: wrap-reverse;
+    }
+    
+    .about-me h1{
+        text-align: center;
+        margin-bottom: 20px;
+        font-size: 30px;
+    }
+
+    .about-me-img{
+        width: 100%;
+    }
+
+    .about-me-container img{
+        width: 290px;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+        padding: 20px 0;
+        position: inherit;
+    }
+    .about-me-container p{
+        font-size: 18px;
+        padding: 0 5px;
+        margin-bottom: 20px;
+    }
+    
+    .about-me-container Button{
+        margin: 0 5px;
+        font-size: 15px;
+    }
+}
+
+
 /* ----------- Portfolio---------------- */
+.container h1{
+    text-align: center;
+    margin-bottom: 30px;
+
+}
+
+.portfolio-images{
+    margin-bottom: 100px;
+}
 
 .portfolio-items ol{
     list-style-type: none;
@@ -23,6 +156,7 @@
     padding: 0 ;
     justify-content: center;
     overflow-x: auto;
+    font-size: 25px;
 }
 
 .portfolio-items ol::-webkit-scrollbar{
@@ -41,13 +175,26 @@
 
 .image-container{
     text-align: center;
-
 }
 
 @media screen and (max-width:600px) {
     .image-container{
         display:flex;
         overflow-x:auto;
+    }
+
+    .portfolio-items ol {
+        justify-content: left;
+        font-size: 15px;
+        margin-bottom: 5px;
+    }
+
+    .portfolio-images{
+        margin-bottom: 50px;
+    }
+
+    .portfolio-videos{
+        text-align: center;
     }
 }
 
@@ -60,6 +207,16 @@
 }
 
 /* ----------contact me----------------- */
+@media screen and (min-width: 600px){
+    .contact-me .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .contact-me-description{
+        margin-right: 100px;
+    }
+}
 
 .form-layout-card>.form{
     max-width: 600px;
@@ -85,7 +242,31 @@
     padding: 5px 10px;
 }
 /* ---------------Footer--------------- */
+
 .footer{
     background-color: #3E412C;
     color: white;
+    font-size: 15px;
 }
+
+.copyright{
+    padding: 0;
+    text-align: center;
+}
+
+@media screen and (min-width: 600px) {
+    
+    .footer .container div:nth-child(2) h2{
+        text-align: center;
+    }
+
+    .footer .container{
+        display: flex;
+        justify-content: space-between;
+        font-size: 20px;
+    }
+    .copyright{
+        font-size: 20px;
+    }        
+}
+
