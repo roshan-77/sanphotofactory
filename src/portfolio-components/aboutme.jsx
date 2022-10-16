@@ -17,7 +17,14 @@ const Aboutme = () => {
                             Fuga voluptatibus, iure impedit totam voluptates atque 
                             pariatur harum eos animi, voluptate eveniet officiis 
                             asperiores dolorem debitis nisi dolore ducimus. 
-                            Cum, sint?</p>
+                            Cum, sint?
+                            
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Fuga voluptatibus, iure impedit totam voluptates atque 
+                            pariatur harum eos animi, voluptate eveniet officiis 
+                            asperiores dolorem debitis nisi dolore ducimus. 
+                            Cum, sint?
+                            </p>
                         <Button> GET TO KNOW ME</Button>
                     </div>
                     <div className="about-me-img">

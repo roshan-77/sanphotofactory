@@ -5,6 +5,37 @@
     padding: 40px 0;
 }
 
+/* -------------Title-------------- */
+
+.title{
+    position: absolute;
+    top: 40vh;
+    text-align: center;
+    width: 100%;
+    color: grey;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 35px;
+}
+
+@media screen and (min-width:500px) and (max-width:950px) {
+    .title{
+        top: 30vh;
+        font-size: 35px;
+    }
+}
+
+@media screen and (min-width:950px) {
+    .title{
+        top: 30vh;
+        font-size: 55px;
+    }
+}
+
+
+.title:hover{
+    color:#3E412C;
+    cursor: pointer;
+}
 
 .tagline-containers{
     display: flex;
@@ -48,7 +79,7 @@
 }
 
 
-@media screen and (max-width:500px) {
+@media screen and (max-width:800px) {
     .tagline-containers img{
         max-width: 100%;
         height: auto;
@@ -77,23 +108,29 @@
 /* ----------- About Me --------------- */
 .about-me-container{
     display: flex;
+    justify-content: center;
+
+}
+
+.about-me-text{
+    width: 500px;
 }
 
 .about-me h1{
-    font-size: 50px;
+    font-size: 40px;
     margin-bottom: 50px;
 }
 
 .about-me-container p{
-    font-size: 35px;
+    font-size: 20px;
     margin-bottom: 50px;
 }
 .about-me-container img{
     position: relative;
     width: auto;
-    height: 550px;
-    padding:0 90px;
-    top: -100px;
+    height: 400px;
+    padding-left:90px;
+    /* top: -100px; */
 }
 
 .about-me-container Button{
@@ -101,9 +138,9 @@
 }
 
 
-@media screen and ( max-width: 500px){
+@media screen and (max-width: 500px){
     .about-me-container{
-        display: flex;
+        /* display: flex; */
         flex-wrap: wrap-reverse;
     }
     
@@ -118,7 +155,7 @@
     }
 
     .about-me-container img{
-        width: 290px;
+        width: 100%;
         height: auto;
         display: block;
         margin: 0 auto;
@@ -137,6 +174,28 @@
     }
 }
 
+@media screen and (min-width:500px) and (max-width: 800px){
+    .about-me-container p{
+        font-size: 15px;
+        padding: 0 5px;
+        margin-bottom: 20px;
+    }
+
+    .about-me-container Button{
+        margin: 0 5px;
+        font-size: 10px;
+    }
+
+    .about-me-container img{
+        width: auto;
+        height: 300px;
+        display: block;
+        margin: 0 auto;
+        /* padding: 20px 0; */
+        position: inherit;
+    }
+
+}
 
 /* ----------- Portfolio---------------- */
 .container h1{
@@ -177,7 +236,7 @@
     text-align: center;
 }
 
-@media screen and (max-width:600px) {
+@media screen and (max-width:800px) {
     .image-container{
         display:flex;
         overflow-x:auto;
@@ -254,6 +313,10 @@
     text-align: center;
 }
 
+.footer .container div{
+    padding-bottom: 10px;
+}
+
 @media screen and (min-width: 600px) {
     
     .footer .container div:nth-child(2) h2{
@@ -269,4 +332,3 @@
         font-size: 20px;
     }        
 }
-

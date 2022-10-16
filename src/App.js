@@ -7,12 +7,14 @@ import Contactme from './portfolio-components/contactme';
 import Footer from './portfolio-components/footer';
 import {Navigation} from './portfolio-components/navigation';
 import './App.css';
+import Title from './portfolio-components/title';
 
 function App() {
   return (
     <div >
       {/* <Navigation /> */}
       <MyCarousel />
+      <Title />
       <Tagline />
       <Aboutme />
       <Portfolio />
