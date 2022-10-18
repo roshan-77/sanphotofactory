@@ -1,11 +1,12 @@
 import React from "react";
+import FadeIn from 'react-fade-in';
 
 const Title = () => {
     return(
         <div className="title">
-            <div>Sanjib Dhungel</div>
-            <div>Photograpgy</div>
-            <div>SanPhoto Factory</div>
+            <div className="title-1"><FadeIn>PHOTOGRAPHY</FadeIn></div>
+            <div className="title-2"><FadeIn>Sanjib Dhungel</FadeIn></div>
+            <div className="title-3"><FadeIn>SanPhoto Factory</FadeIn></div>
         </div>
     )
 }

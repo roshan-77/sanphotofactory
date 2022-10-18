@@ -12,7 +12,7 @@ import Title from './portfolio-components/title';
 function App() {
   return (
     <div >
-      {/* <Navigation /> */}
+      <Navigation />
       <MyCarousel />
       <Title />
       <Tagline />

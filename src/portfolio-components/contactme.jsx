@@ -26,7 +26,7 @@ const Contactme = () => {
                         <div >
                             <textarea className = "form-textarea" name = "message" placeholder="Message"></textarea>
                         </div>
-                        <button type="submit" style={{backgroundColor:"black", fontSize:"1em", borderRadius:"10px", color:"white", padding:"5px 50px", maxWidth:"500px", margin:"0 auto"}}>Send</button>
+                        <button type="submit" style={{backgroundColor:"#3E412C", fontSize:"1em", borderRadius:"10px", color:"white", padding:"5px 50px", maxWidth:"500px", margin:"0 auto"}}>Send</button>
                     </form>
                 </div>
             </div>

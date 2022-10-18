@@ -6,8 +6,8 @@ import "../style.css"
 
 const Aboutme = () => {
     return(
-        <div className="container">
-            <div className="about-me">
+        <div className="about-me" style={{backgroundColor:"#FBF4E3"}}>
+            <div className="container">
                 <h1>About me</h1>
                 <div className="about-me-container">
                     <div className="about-me-text">
@@ -25,7 +25,7 @@ const Aboutme = () => {
                             asperiores dolorem debitis nisi dolore ducimus. 
                             Cum, sint?
                             </p>
-                        <Button> GET TO KNOW ME</Button>
+                        <Button style={{backgroundColor:"#3E412C", borderColor:"#3E412C"}}> GET TO KNOW ME</Button>
                     </div>
                     <div className="about-me-img">
                         <img alt="" src={profile}>
