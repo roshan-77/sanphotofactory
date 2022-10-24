@@ -9,10 +9,11 @@ export default function ImageModal(props) {
       size="md"
       aria-labelledby="contained-modal-title-vcenter"
       centered
+      className='modal-layout'
     >
-      <Modal.Header closeButton>
+      <Modal.Header closeButton>{props.photoType.toUpperCase()}
       </Modal.Header>
-      <img src={props.source} alt="" />
+      <img className = "modal-image" src={props.source} alt=""/>
     </Modal>
   );
 }

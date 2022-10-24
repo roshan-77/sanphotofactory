@@ -18,7 +18,9 @@
 }
 
 /* ------------ Carousel------ */
-
+.carousel{
+    box-shadow: 10px 10px 50px 15px #3E412C, -10px 10px 50px 15px #3E412C;
+}
 .carousel img{
     position: relative;
 }
@@ -34,6 +36,7 @@
     font-family:Georgia, 'Times New Roman', Times, serif;
     font-size: 35px;
     opacity: 0.5;
+    transition: 1s;
 }
 
 .title-1{
@@ -298,9 +301,41 @@
     margin: 10px
 }
 
-/* .image-container img:hover{
-    transform: scale(1.3);
-} */
+.image-container img:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+/* ------------- Modal ---------------- */
+
+.modal-layout::-webkit-scrollbar{
+    display:none;
+}
+
+/* --------------Services-------------- */
+
+.services-containers{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.services-container{
+    margin: 20px;
+    width: 350px;
+}
+
+.services-container:hover{
+    transition: 0.9s;
+    background-color: #3E412C;
+    color: white;
+}
+
+.services-container-div{
+    padding: 30px;
+    border: 1px solid goldenrod;
+
+}
+
 /* ----------contact me----------------- */
 @media screen and (min-width: 600px){
     .contact-me .container{

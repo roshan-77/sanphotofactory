@@ -8,6 +8,7 @@ import Footer from './portfolio-components/footer';
 import {Navigation} from './portfolio-components/navigation';
 import './App.css';
 import Title from './portfolio-components/title';
+import Services from './portfolio-components/services';
 // import AsNavFor from './portfolio-components/AsNavFor';
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
       <Tagline />
       <Aboutme />
       <Portfolio />
+      <Services/>
       <Contactme />
       <Footer />
     </>

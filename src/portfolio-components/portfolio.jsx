@@ -59,6 +59,7 @@ const Portfolio = () => {
                     show={modalShow.bool}
                     onHide={() => setModalShow({bool:false, selectedImage:""})}
                     source={modalShow.selectedImage}
+                    photoType={active}
                     />
                     <div>
                         {active === "portrait" && <div className={active}> <div className="image-container" >{portrait.map(x=> imageContainer(x))}</div></div>}
