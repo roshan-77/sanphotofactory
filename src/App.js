@@ -8,19 +8,21 @@ import Footer from './portfolio-components/footer';
 import {Navigation} from './portfolio-components/navigation';
 import './App.css';
 import Title from './portfolio-components/title';
+// import AsNavFor from './portfolio-components/AsNavFor';
 
 function App() {
   return (
-    <div >
+    < >
       <Navigation />
       <MyCarousel />
+      {/* <AsNavFor /> */}
       <Title />
       <Tagline />
       <Aboutme />
       <Portfolio />
       <Contactme />
       <Footer />
-    </div>
+    </>
   );
 }
 

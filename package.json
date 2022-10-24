@@ -17,6 +17,9 @@
     "react-dom": "^18.2.0",
     "react-fade-in": "^2.0.1",
     "react-scripts": "5.0.1",
+    "react-scroll-motion": "^0.3.0",
+    "react-slick": "^0.29.0",
+    "slick-carousel": "^1.8.1",
     "uuid": "^8.3.2",
     "web-vitals": "^2.1.4"
   },

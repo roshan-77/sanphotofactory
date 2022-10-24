@@ -2,12 +2,14 @@ import React from "react";
 import "../style.css"
 import { useState } from "react";
 import videos from "../portfolio-videos-link";
+import ImageModal from "./ImageModal"
 // import {Button} from "react-bootstrap";
 // import portfolioImages from "../portfolio-images-src/portfolioimagesrc";
 const {v4: uuidv4} = require('uuid')
 
 const Portfolio = () => {
     const [active, setActive] = useState ("portrait")
+    const [modalShow, setModalShow] = useState({bool:false, selectedImage:""});
 
     function importAll(r) {
         let images = [];
@@ -22,9 +24,19 @@ const Portfolio = () => {
     const baby = importAll(require.context("../images/portfolio-images/baby", false, /\.(png|jpe?g|svg)$/));
     const wedding = importAll(require.context("../images/portfolio-images/wedding", false, /\.(png|jpe?g|svg)$/));
 
+    function ImageDisplay(){
+        return(
+            <div>
+            </div>
+        )
+    }
+
+    
     function imageContainer(x){
         return(
-            <img alt = " " src={x} style={{height:"400px"}} key={uuidv4()}/>
+            <>
+               <img className = "image-container-images" alt = " " src={x} style={{height:"400px"}} key={uuidv4()} onClick={() => setModalShow({bool:true, selectedImage:x})}/>
+            </>
         )
     }
 
@@ -43,6 +55,11 @@ const Portfolio = () => {
                             <li onClick={()=>setActive("wedding")}>Wedding</li>
                         </ol>
                     </div>
+                    <ImageModal
+                    show={modalShow.bool}
+                    onHide={() => setModalShow({bool:false, selectedImage:""})}
+                    source={modalShow.selectedImage}
+                    />
                     <div>
                         {active === "portrait" && <div className={active}> <div className="image-container" >{portrait.map(x=> imageContainer(x))}</div></div>}
                         {active === "graduation" && <div className={active}> <div className="image-container" >{graduation.map(x=> imageContainer(x))}</div></div>}
