@@ -6,7 +6,7 @@ import "../style.css"
 
 const Aboutme = () => {
     return(
-        <div className="about-me" style={{backgroundColor:"#FBF4E3"}}>
+        <div className="about-me" id="about-me" style={{backgroundColor:"#FBF4E3"}}>
             <div className="container">
                 <h1>About me</h1>
                 <div className="about-me-container">

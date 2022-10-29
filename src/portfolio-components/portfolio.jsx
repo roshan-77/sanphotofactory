@@ -3,6 +3,7 @@ import "../style.css"
 import { useState } from "react";
 import videos from "../portfolio-videos-link";
 import ImageModal from "./ImageModal"
+import VideoContainer from "./videoContainer";
 // import {Button} from "react-bootstrap";
 // import portfolioImages from "../portfolio-images-src/portfolioimagesrc";
 const {v4: uuidv4} = require('uuid')
@@ -41,7 +42,7 @@ const Portfolio = () => {
     }
 
     return(
-        <div className="portfolio">
+        <div className="portfolio" id="portfolio">
             <div className="container">
                 <div className="portfolio-images">
                     <h1>Portfolio</h1>
@@ -72,12 +73,7 @@ const Portfolio = () => {
                     </div>
                 </div>
                 <div className="portfolio-videos">
-                    <h1>Videos</h1>
-                    <div className="image-container">
-                        {videos.map((x)=>
-                    <iframe style={{width:"420px", height:"320px", padding:"10px"}} src={`https://www.youtube.com/embed/${x}`} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
-                    )}
-                    </div>
+                    <VideoContainer videos={videos}/>
                 </div>
             </div>
         </div>

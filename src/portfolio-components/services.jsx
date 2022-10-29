@@ -10,7 +10,7 @@ export default function Services(){
         {logo:faPencil,title:"Designs",text:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero soluta officia consectetur sint, nulla alias cum veritatis omnis? Non, esse quis reiciendis soluta eligendi omnis quae molestias quisquam repudiandae itaque."}
     ]
     return(
-        <div className="container">
+        <div className="container" id="services">
                 <h1>Services</h1>
             <div className="services-containers">
                 {myServices.map((x)=>(

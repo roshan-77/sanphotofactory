@@ -23,10 +23,10 @@ const Footer = () => {
                     </div>
                 </div>
                 <div>
-                    <div>ABOUT ME</div>
-                    <div>PORTFOLIO</div>
-                    <div>OFFERS</div>
-                    <div>PRICES</div>
+                    <div><a href="#about-me">ABOUT ME</a></div>
+                    <div><a href="#portfolio">PORTFOLIO</a></div>
+                    <div><a href="#services">SERVICES</a></div>
+                    <div><a href="#contact-me">CONTACT</a></div>
                 </div>
             </div>
             <div className="copyright">

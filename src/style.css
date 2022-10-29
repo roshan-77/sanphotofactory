@@ -5,8 +5,12 @@
     padding: 40px 0;
 }
 
-.nav-link{
+a.nav-link{
     padding: 5px !important;
+}
+
+a.nav-link:hover{
+    border-bottom: 3px solid red;
 }
 
 .containers{
@@ -182,7 +186,7 @@
     }
 
     .about-me-img{
-        width: 100%;
+        width: 90%;
     }
 
     .about-me-container img{
@@ -195,12 +199,12 @@
     }
     .about-me-container p{
         font-size: 18px;
-        padding: 0 5px;
+        padding: 0 20px;
         margin-bottom: 20px;
     }
     
     .about-me-container Button{
-        margin: 0 5px;
+        margin: 0 20px;
         font-size: 15px;
     }
 }
@@ -272,7 +276,7 @@
     text-align: center;
 }
 
-@media screen and (max-width:800px) {
+@media screen and (max-width:950px) {
     .image-container{
         display:flex;
         overflow-x:auto;
@@ -304,6 +308,27 @@
 .image-container img:hover{
     opacity: 0.8;
     cursor: pointer;
+}
+
+
+
+
+@media screen and (max-height:600px){
+    .portfolio-videos{
+        padding: 100px 0;
+    }
+}
+
+@media screen and (max-width:500px){
+    .video-container-card-style{
+        width: 200px !important;
+        height: 450px !important;
+    }   
+    
+    .yt-video{
+        width: 200px !important;
+        height:auto !important;
+    }
 }
 
 /* ------------- Modal ---------------- */
@@ -402,6 +427,11 @@ button:hover{
         display: flex;
         justify-content: space-between;
         font-size: 20px;
+    }
+
+    .footer .container div:nth-child(3) div a{
+        text-decoration: none;
+        color: white;
     }
     .copyright{
         font-size: 20px;
