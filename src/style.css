@@ -319,14 +319,25 @@ a.nav-link:hover{
     }
 }
 
-@media screen and (max-width:500px){
+@media screen and (max-width:330px){
     .video-container-card-style{
-        width: 200px !important;
+        width: 190px !important;
+        height: 450px !important;
+    }   
+    .yt-video{
+        width: 180px !important;
+        height:auto !important;
+    }
+}
+
+@media screen and (min-width:330px)and (max-width:500px){
+    .video-container-card-style{
+        width: 230px !important;
         height: 450px !important;
     }   
     
     .yt-video{
-        width: 200px !important;
+        width: 220px !important;
         height:auto !important;
     }
 }
@@ -417,6 +428,11 @@ button:hover{
     padding-bottom: 10px;
 }
 
+.footer .container div:nth-child(3) div a{
+    text-decoration: none;
+    color: white;
+}
+
 @media screen and (min-width: 600px) {
     
     .footer .container div:nth-child(2) h2{
@@ -427,11 +443,6 @@ button:hover{
         display: flex;
         justify-content: space-between;
         font-size: 20px;
-    }
-
-    .footer .container div:nth-child(3) div a{
-        text-decoration: none;
-        color: white;
     }
     .copyright{
         font-size: 20px;
